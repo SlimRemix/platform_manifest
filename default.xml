@@ -56,8 +56,8 @@
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" remote="aosp" revision="master" />
 
   <!-- Vendor SlimRemix & SaberMod -->
-  <project path="vendor/sm" name="android_vendor_sabermod" remote="sr" revision="lp5.1" />
-  <project path="vendor/Slimremix" name="android_vendor_Slimremix" remote="sr" revision="lp5.1" >
+  <project path="vendor/sm" name="android_vendor_SaberMod" remote="sr" revision="lp5.1" />
+  <project path="vendor/slimremix" name="android_vendor_SlimRemix" remote="sr" revision="lp5.1" >
     <copyfile src="tools/build-Slimremix.sh" dest="build-Slimremix.sh" />
   </project>
 
