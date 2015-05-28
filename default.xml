@@ -55,6 +55,13 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" groups="pdk,linux,arm" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" remote="aosp" revision="master" />
 
+  <!-- Clang Qcom Dependencies -->
+  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" name="llvm-Snapdragon_LLVM_for_Android_3.6/" remote="sr" revision="clang_qcom_3.6" />
+  <project path="prebuilts/ndk" name="android_prebuilts_ndk" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
+  <project path="vendor/clanglibs" name="clanglibs" remote="sr" revision="clang_qcom_3.6" />
+  <project path="external/compiler-rt" name="android_external_compiler-rt" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
+  <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
+
   <!-- Vendor SlimRemix & SaberMod -->
   <project path="vendor/sm" name="android_vendor_SaberMod" remote="sr" revision="lp5.1" />
   <project path="vendor/slimremix" name="android_vendor_SlimRemix" remote="sr" revision="lp5.1" >
@@ -153,7 +160,6 @@
   <project path="external/chromium_org/v8" name="platform/external/chromium_org/v8" />
   <project path="external/clang" name="platform/external/clang" groups="pdk" />
   <project path="external/cmockery" name="platform/external/cmockery" />
-  <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
   <project path="external/conscrypt" name="platform/external/conscrypt" groups="pdk-cw-fs" />
   <project path="external/deqp" name="platform/external/deqp" />
   <project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk-cw-fs" />
