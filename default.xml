@@ -45,7 +45,6 @@
    <project path="platform_manifest" name="platform_manifest" remote="sr" revision="lp5.1" />
    <project path="frameworks/base" name="frameworks_base" remote="sr" revision="lp5.1" />
    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sr" revision="lp5.1" />
-   <project path="vendor/slim" name="vendor_slim" remote="sr" revision="lp5.1" />
 
   <!-- SABER MOD GCC -->
   <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="CMRemix/arm-eabi-4.9" remote="gl" revision="master" />-->
@@ -582,6 +581,9 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+
+  <!-- New Additions for slim -->
+  <project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="lp5.1" />
 
   <!-- Slim file manager -->
   <project path="packages/apps/SlimFileManager" name="SlimRoms/packages_apps_SlimFileManager" remote="github" revision="lp5.1" />
