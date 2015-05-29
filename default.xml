@@ -37,45 +37,6 @@
            remote="aosp"
            sync-j="4" />
 
-  <!-- New Additions for SlimRemix -->
-  <project path="build" name="android_build" remote="sr" revision="lp5.1" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-
-   <project path="platform_manifest" name="platform_manifest" remote="sr" revision="lp5.1" />
-   <project path="frameworks/base" name="frameworks_base" remote="sr" revision="lp5.1" />
-   <project path="frameworks/webview" name="android_frameworks_webview" groups="pdk-cw-fs" remote="sr" revision="lp5.1" />
-   <project path="libcore" name="android_libcore" remote="sr" revision="lp5.1" />
-   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sr" revision="lp5.1" />
-   <project path="external/libpng" name="android_external_libpng" groups="pdk" remote="sr" revision="lp5.1" />
-
-
-  <!-- Package Apps -->
-  <project path="packages/apps/SlimOTA" name="android_packages_apps_SlimOTA" remote="sr" revision="lp5.1" />
-  <project path="packages/apps/FloatingActionButton" name="android-floating-action-button" remote="sr" revision="lp5.1" />
-  <project path="packages/apps/KernelAdiutor" name="android_packages_apps_KernelAdiutor" remote="sr" revision="lp5.1" />
-
-  <!-- SABER MOD GCC -->
-  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="CMRemix/arm-eabi-4.9" remote="gl" revision="master" />-->
-  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="CMRemix/arm-linux-androideabi-4.9" remote="gl" revision="master" />-->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="arm-eabi-4.9" groups="pdk,linux,arm" remote="bb" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="arm-linux-androideabi-4.8" groups="pdk,linux,arm" remote="bb" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" groups="pdk,linux,arm" remote="bb" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" remote="aosp" revision="master" />
-
-  <!-- Clang Qcom Dependencies -->
-  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" name="llvm-Snapdragon_LLVM_for_Android_3.6/" remote="sr" revision="clang_qcom_3.6" />
-  <project path="prebuilts/ndk" name="android_prebuilts_ndk" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
-  <project path="vendor/clanglibs" name="clanglibs" remote="sr" revision="clang_qcom_3.6" />
-  <project path="external/compiler-rt" name="android_external_compiler-rt" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
-  <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
-
-  <!-- Vendor SlimRemix & SaberMod -->
-  <project path="vendor/sm" name="android_vendor_SaberMod" remote="sr" revision="lp5.1" />
-  <project path="vendor/slimremix" name="android_vendor_SlimRemix" remote="sr" revision="lp5.1" >
-    <copyfile src="tools/build-Slimremix.sh" dest="build-Slimremix.sh" />
-  </project>
-
   <!-- SlimRoms Start Here -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="SlimRoms/android_art" remote="github" revision="lp5.1"  />
@@ -106,7 +67,6 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
-  <project path="device/qcom/common" name="SlimRoms/device_qcom_common" remote="github" revision="lp5.1" />
   <project path="device/qcom/sepolicy" name="SlimRoms/device_qcom_sepolicy" remote="github" revision="lp5.1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
@@ -393,38 +353,10 @@
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="SlimRoms/hardware_libhardware" remote="github" revision="lp5.1" />
-  <project path="hardware/libhardware_legacy" name="SlimRoms/hardware_libhardware_legacy" remote="github" revision="lp5.1" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
-  <project path="hardware/qcom/audio/default" name="SlimRoms/hardware_qcom_audio" remote="github" revision="lp5.1" />
-  <project path="hardware/qcom/audio-caf/apq8084" name="SlimRoms/hardware_qcom_audio" remote="github" revision="lp5.1-caf-8084" />
-  <project path="hardware/qcom/audio-caf/msm8226" name="SlimRoms/hardware_qcom_audio" remote="github" revision="lp5.1-caf-8226" />
-  <project path="hardware/qcom/audio-caf/msm8610" name="SlimRoms/hardware_qcom_audio" remote="github" revision="lp5.1-caf-8610" />
-  <project path="hardware/qcom/audio-caf/msm8660" name="SlimRoms/hardware_qcom_audio" remote="github" revision="lp5.1-caf-8660" />
-  <project path="hardware/qcom/audio-caf/msm8916" name="SlimRoms/hardware_qcom_audio" remote="github" revision="lp5.1-caf-8916" />
-  <project path="hardware/qcom/audio-caf/msm8960" name="SlimRoms/hardware_qcom_audio" remote="github" revision="lp5.1-caf-8960" />
-  <project path="hardware/qcom/audio-caf/msm8974" name="SlimRoms/hardware_qcom_audio" remote="github" revision="lp5.1-caf-8974" />
   <project path="hardware/qcom/bt" name="SlimRoms/hardware_qcom_bt" remote="github" revision="lp5.1" />
-  <project path="hardware/qcom/display" name="SlimRoms/hardware_qcom_display" remote="github" revision="lp5.1" />
-  <project path="hardware/qcom/display-caf/apq8084" name="SlimRoms/hardware_qcom_display" remote="github" revision="lp5.1-caf-8084" />
-  <project path="hardware/qcom/display-caf/msm8226" name="SlimRoms/hardware_qcom_display" remote="github" revision="lp5.1-caf-8226" />
-  <project path="hardware/qcom/display-caf/msm8610" name="SlimRoms/hardware_qcom_display" remote="github" revision="lp5.1-caf-8610" />
-  <project path="hardware/qcom/display-caf/msm8660" name="SlimRoms/hardware_qcom_display" remote="github" revision="lp5.1-caf-8660" />
-  <project path="hardware/qcom/display-caf/msm8916" name="SlimRoms/hardware_qcom_display" remote="github" revision="lp5.1-caf-8916" />
-  <project path="hardware/qcom/display-caf/msm8960" name="SlimRoms/hardware_qcom_display" remote="github" revision="lp5.1-caf-8960" />
-  <project path="hardware/qcom/display-caf/msm8974" name="SlimRoms/hardware_qcom_display" remote="github" revision="lp5.1-caf-8974" />
   <project path="hardware/qcom/fm" name="SlimRoms/hardware_qcom_fm" remote="github" revision="lp5.1" />
-  <project path="hardware/qcom/gps" name="SlimRoms/hardware_qcom_gps" remote="github" revision="lp5.1" />
-  <project path="hardware/qcom/keymaster" name="SlimRoms/hardware_qcom_keymaster" remote="github" revision="lp5.1" />
-  <project path="hardware/qcom/media/default" name="SlimRoms/hardware_qcom_media" remote="github" revision="lp5.1" />
-  <project path="hardware/qcom/media-caf/apq8084" name="SlimRoms/hardware_qcom_media" remote="github" revision="lp5.1-caf-8084" />
-  <project path="hardware/qcom/media-caf/msm8226" name="SlimRoms/hardware_qcom_media" remote="github" revision="lp5.1-caf-8226" />
-  <project path="hardware/qcom/media-caf/msm8610" name="SlimRoms/hardware_qcom_media" remote="github" revision="lp5.1-caf-8610" />
-  <project path="hardware/qcom/media-caf/msm8660" name="SlimRoms/hardware_qcom_media" remote="github" revision="lp5.1-caf-8660" />
-  <project path="hardware/qcom/media-caf/msm8916" name="SlimRoms/hardware_qcom_media" remote="github" revision="lp5.1-caf-8916" />
-  <project path="hardware/qcom/media-caf/msm8960" name="SlimRoms/hardware_qcom_media" remote="github" revision="lp5.1-caf-8960" />
-  <project path="hardware/qcom/media-caf/msm8974" name="SlimRoms/hardware_qcom_media" remote="github" revision="lp5.1-caf-8974" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" />
   <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" />
@@ -432,7 +364,6 @@
   <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" />
   <project path="hardware/qcom/power" name="SlimRoms/hardware_qcom_power" remote="github" revision="lp5.1" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
-  <project path="hardware/qcom/wlan" name="SlimRoms/hardware_qcom_wlan" remote="github" revision="lp5.1" />
   <project path="hardware/ril" name="SlimRoms/hardware_ril" remote="github" revision="lp5.1" />
   <project path="hardware/ril-caf" name="SlimRoms/hardware_ril" remote="github" revision="lp5.1-caf" />
   <project path="hardware/samsung_slsi/exynos5" name="SlimRoms/hardware_samsung_slsi_exynos5" remote="github" revision="lp5.1" />
@@ -568,7 +499,6 @@
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="SlimRoms/android_system_media" remote="github" revision="lp5.1" />
   <project path="system/netd" name="SlimRoms/android_system_netd" remote="github" revision="lp5.1" />
-  <project path="system/qcom" name="SlimRoms/android_system_qcom" remote="github" revision="lp5.1" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/vold" name="SlimRoms/android_system_vold" remote="github" revision="lp5.1" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
@@ -595,9 +525,6 @@
   <!-- SlimLauncher -->
   <project path="packages/apps/SlimLauncher" name="SlimRoms/packages_apps_SlimLauncher" remote="github" revision="lp5.1" />
 
-  <!--Power Hal -->
-  <project path="hardware/cm" name="SlimRoms/hardware_cm" remote="github" revision="lp5.1" />
-
   <!-- Slim toolchain gcc and linaro -->
   <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="lp5.1" />
 
@@ -616,5 +543,80 @@
   <!-- ffmpeg -->
   <project path="external/ffmpeg" name="SlimRoms/android_external_ffmpeg" remote="github" revision="lp5.1" />
   <project path="external/stagefright-plugins" name="SlimRoms/android_external_stagefright-plugins" remote="github" revision="lp5.1" />
+
+  <!-- ******** SlimRemix ******* -->
+  <project path="build" name="android_build" remote="sr" revision="lp5.1" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+   <project path="platform_manifest" name="platform_manifest" remote="sr" revision="lp5.1" />
+   <project path="frameworks/base" name="frameworks_base" remote="sr" revision="lp5.1" />
+   <project path="frameworks/webview" name="android_frameworks_webview" groups="pdk-cw-fs" remote="sr" revision="lp5.1" />
+   <project path="libcore" name="android_libcore" remote="sr" revision="lp5.1" />
+   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sr" revision="lp5.1" />
+   <project path="external/libpng" name="android_external_libpng" groups="pdk" remote="sr" revision="lp5.1" />
+
+
+  <!-- Package Apps -->
+  <project path="packages/apps/SlimOTA" name="android_packages_apps_SlimOTA" remote="sr" revision="lp5.1" />
+  <project path="packages/apps/FloatingActionButton" name="android-floating-action-button" remote="sr" revision="lp5.1" />
+  <project path="packages/apps/KernelAdiutor" name="android_packages_apps_KernelAdiutor" remote="sr" revision="lp5.1" />
+
+  <!-- SABER MOD GCC -->
+  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="CMRemix/arm-eabi-4.9" remote="gl" revision="master" />-->
+  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="CMRemix/arm-linux-androideabi-4.9" remote="gl" revision="master" />-->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="arm-eabi-4.9" groups="pdk,linux,arm" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="arm-linux-androideabi-4.8" groups="pdk,linux,arm" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" groups="pdk,linux,arm" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" remote="aosp" revision="master" />
+
+  <!-- Clang Qcom Dependencies -->
+  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" name="llvm-Snapdragon_LLVM_for_Android_3.6/" remote="sr" revision="clang_qcom_3.6" />
+  <project path="prebuilts/ndk" name="android_prebuilts_ndk" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
+  <project path="vendor/clanglibs" name="clanglibs" remote="sr" revision="clang_qcom_3.6" />
+  <project path="external/compiler-rt" name="android_external_compiler-rt" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
+  <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
+
+  <!-- Vendor SlimRemix & SaberMod -->
+  <project path="vendor/sm" name="android_vendor_SaberMod" remote="sr" revision="lp5.1" />
+  <project path="vendor/slimremix" name="android_vendor_SlimRemix" remote="sr" revision="lp5.1" >
+    <copyfile src="tools/build-Slimremix.sh" dest="build-Slimremix.sh" />
+  </project>
+  <!--********** SlimRemix ********* -->
+
+  <!--********** CyanogenMod ******** -->
+  <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" remote="github" revision="cm-12.1" />
+
+  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="github" revision="cm-12.1" />
+  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="github" revision="cm-12.1" />
+
+  <project path="hardware/qcom/audio/default" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-12.1" />
+  <project path="hardware/qcom/audio-caf/apq8084" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-12.1-caf-8084" />
+  <project path="hardware/qcom/audio-caf/msm8226" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-12.1-caf-8226" />
+  <project path="hardware/qcom/audio-caf/msm8610" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-12.1-caf-8610" />
+  <project path="hardware/qcom/audio-caf/msm8916" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-12.1-caf-8916" />
+  <project path="hardware/qcom/audio-caf/msm8960" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-12.1-caf-8960" />
+  <project path="hardware/qcom/audio-caf/msm8974" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-12.1-caf-8974" />
+  <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1" />
+  <project path="hardware/qcom/display-caf/apq8084" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8084" />
+  <project path="hardware/qcom/display-caf/msm8226" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8226" />
+  <project path="hardware/qcom/display-caf/msm8610" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8610" />
+  <project path="hardware/qcom/display-caf/msm8916" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8916" />
+  <project path="hardware/qcom/display-caf/msm8960" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8960" />
+  <project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8974" />
+  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="github" revision="cm-12.1" />
+  <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="github" revision="cm-12.1" />
+  <project path="hardware/qcom/media/default" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-12.1" />
+  <project path="hardware/qcom/media-caf/apq8084" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-12.1-caf-8084" />
+  <project path="hardware/qcom/media-caf/msm8226" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-12.1-caf-8226" />
+  <project path="hardware/qcom/media-caf/msm8610" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-12.1-caf-8610" />
+  <project path="hardware/qcom/media-caf/msm8916" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-12.1-caf-8916" />
+  <project path="hardware/qcom/media-caf/msm8960" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-12.1-caf-8960" />
+  <project path="hardware/qcom/media-caf/msm8974" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-12.1-caf-8974" />
+  <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" remote="github" revision="cm-12.1" />
+
+  <project path="system/qcom" name="CyanogenMod/android_system_qcom" remote="github" revision="cm-12.1" />
+  <project path="device/qcom/common" name="CyanogenMod/device_qcom_common" remote="github" revision="cm-12.1" />  
+  <!--********** CyanogenMod ******** -->
 
 </manifest>
