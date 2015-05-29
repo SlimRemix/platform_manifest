@@ -616,7 +616,7 @@
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" remote="github" revision="cm-12.1" />
 
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" remote="github" revision="cm-12.1" />
-  <project path="device/qcom/common" name="CyanogenMod/device_qcom_common" remote="github" revision="cm-12.1" />  
+  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-12.1" />  
   <!--********** CyanogenMod ******** -->
 
 </manifest>
