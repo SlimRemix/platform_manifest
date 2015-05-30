@@ -585,6 +585,7 @@
   <!--********** SlimRemix ********* -->
 
   <!--********** CyanogenMod ******** -->
+  <project path="frameworks/opt/hardware" name="CyanogenMod/android_frameworks_opt_hardware" remote="github" revision="cm-12.1" />
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" remote="github" revision="cm-12.1" />
 
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="github" revision="cm-12.1" />
