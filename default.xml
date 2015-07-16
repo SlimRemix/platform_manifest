@@ -45,6 +45,7 @@
    <project path="platform_manifest" name="platform_manifest" remote="sr" revision="lp5.1" />
    <project path="frameworks/base" name="frameworks_base" remote="sr" revision="lp5.1" />
    <project path="frameworks/webview" name="android_frameworks_webview" groups="pdk-cw-fs" remote="sr" revision="lp5.1" />
+   <project path="libcore" name="android_libcore" remote="sr" revision="lp5.1" />
    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sr" revision="lp5.1" />
    <project path="external/libpng" name="android_external_libpng" groups="pdk" remote="sr" revision="lp5.1" />
 
@@ -449,7 +450,6 @@
   <project path="hardware/ti/omap4xxx" name="SlimRoms/hardware_ti_omap4xxx" remote="github" revision="lp5.1" />
   <project path="hardware/ti/wlan" name="SlimRoms/hardware_ti_wlan" remote="github" revision="lp5.1" />
   <project path="hardware/ti/wpan" name="SlimRoms/hardware_ti_wpan" remote="github" revision="lp5.1" />
-  <project path="libcore" name="SlimRoms/android_libcore" remote="github" revision="lp5.1" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/AudioFX" name="SlimRoms/packages_apps_AudioFX" remote="github" revision="lp5.1" />
