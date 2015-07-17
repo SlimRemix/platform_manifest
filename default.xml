@@ -80,7 +80,7 @@
   <!-- Vendor SlimRemix & SaberMod -->
   <project path="vendor/sm" name="android_vendor_SaberMod" remote="sr" revision="lp5.1" />
   <project path="vendor/slimremix" name="android_vendor_SlimRemix" remote="sr" revision="lp5.1" >
-    <copyfile src="tools/build-Slimremix.sh" dest="build-Slimremix.sh" />
+    <copyfile src="tools/build-slimremix.sh" dest="build-slimremix.sh" />
   </project>
 
   <!-- SlimRoms Start Here -->
