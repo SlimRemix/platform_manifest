@@ -64,6 +64,7 @@
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="sr" revision="lp5.1" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="sr" revision="lp5.1" />
   <project name="packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" remote="sr" revision="lp5.1" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="sr" revision="lp5.1" />
 
   <!-- SABER MOD GCC -->
   <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="CMRemix/arm-eabi-4.9" remote="gl" revision="master" />-->
@@ -501,7 +502,6 @@
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs" />
   <project path="packages/providers/ContactsProvider" name="SlimRoms/packages_providers_ContactsProvider" remote="github" revision="lp5.1" />
   <project path="packages/providers/DownloadProvider" name="SlimRoms/packages_providers_DownloadProvider" remote="github" revision="lp5.1" />
-  <project path="packages/providers/MediaProvider" name="SlimRoms/packages_providers_MediaProvider" remote="github" revision="lp5.1" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="SlimRoms/packages_providers_TelephonyProvider" remote="github" revision="lp5.1" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" />
