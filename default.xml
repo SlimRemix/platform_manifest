@@ -55,17 +55,27 @@
   <project path="packages/apps/SlimRemixUpdater" name="android_packages_apps_SlimRemixUpdater" remote="sr" revision="lp5.1" />
   <project path="packages/apps/FloatingActionButton" name="android-floating-action-button" remote="sr" revision="lp5.1" />
   <project path="packages/apps/KernelAdiutor" name="android_packages_apps_KernelAdiutor" remote="sr" revision="lp5.1" />
-  <project path="packages/apps/InCallUI" name="packages_apps_InCallUI" remote="sr" revision="lp5.1" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="sr" revision="lp5.1" />
-  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="sr" revision="lp5.1" />
   <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" remote="sr" revision="lp5.1" />
   <project path="packages/apps/ScreenRecorder" name="packages_apps_ScreenRecorder" remote="sr" revision="lp5.1" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="sr" revision="lp5.1" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="sr" revision="lp5.1" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="sr" revision="lp5.1" />
   <project name="packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" remote="sr" revision="lp5.1" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="sr" revision="lp5.1" />
   <project path="packages/apps/Apollo" name="DirtyUnicorns/android_packages_apps_Apollo" remote="github" revision="lollipop-caf" />
+
+  <!-- Phone -->
+  <project path="packages/apps/Dialer" name="SlimRemix/packages_apps_Dialer" remote="github" revision="cm-12.1" />
+  <project path="packages/apps/InCallUI" name="SlimRemix/packages_apps_InCallUI" remote="github" revision="cm-12.1" />
+  <project path="packages/services/Telecomm" name="SlimRemix/packages_services_Telecomm" remote="github" revision="cm-12.1" />
+  <project path="packages/services/Telephony" name="SlimRemix/packages_services_Telephony" remote="github" revision="cm-12.1" />
+  <project path="frameworks/opt/telephony" name="SlimRemix/frameworks_opt_telephony" remote="github" revision="cm-12.1" />
+  <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" remote="github" revision="cm-12.1" />
+  <project path="frameworks/opt/net/ims" name="CyanogenMod/android_frameworks_opt_net_ims" remote="github" revision="cm-12.1" />
+  <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_providers_TelephonyProvider" remote="github" revision="cm-12.1" />
+  <project path="external/libphonenumbergoogle" name="CyanogenMod/android_external_libphonenumbergoogle" remote="github" revision="cm-12.1" />
+  <project path="packages/apps/CellBroadcastReceiver" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" remote="github" revision="cm-12.1" />
+  <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" remote="github" revision="cm-12.1" />
+
   <!-- SABER MOD GCC -->
   <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="CMRemix/arm-eabi-4.9" remote="gl" revision="master" />-->
   <!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="CMRemix/arm-linux-androideabi-4.9" remote="gl" revision="master" />-->
@@ -377,13 +387,11 @@
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs" />
   <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/net/ims" name="SlimRoms/frameworks_opt_net_ims" remote="github" revision="lp5.1" groups="frameworks_ims,pdk-cw-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs" />
   <project path="frameworks/opt/net/wifi" name="SlimRoms/frameworks_opt_net_wifi" remote="github" revision="lp5.1" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="SlimRoms/frameworks_opt_telephony" remote="github" revision="lp5.1" />
   <project path="frameworks/opt/timezonepicker" name="SlimRoms/frameworks_opt_timezonepicker" remote="github" revision="lp5.1" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" />
@@ -468,7 +476,6 @@
   <project path="packages/apps/Calendar" name="SlimRoms/packages_apps_Calendar" remote="github" revision="lp5.1" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
   <project path="packages/apps/Camera2" name="SlimRoms/packages_apps_Camera2" remote="github" revision="lp5.1" />
-  <project path="packages/apps/CellBroadcastReceiver" name="SlimRoms/packages_apps_CellBroadcastReceiver" remote="github" revision="lp5.1" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs" />
   <project path="packages/apps/DeskClock" name="SlimRoms/packages_apps_DeskClock" remote="github" revision="lp5.1" />
   <project path="packages/apps/Email" name="SlimRoms/packages_apps_Email" remote="github" revision="lp5.1" />
@@ -485,14 +492,12 @@
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
-  <project path="packages/apps/PhoneCommon" name="SlimRoms/packages_apps_PhoneCommon" remote="github" revision="lp5.1" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
-  <project path="packages/apps/Stk" name="SlimRoms/packages_apps_Stk" remote="github" revision="lp5.1" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" />
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" />
@@ -506,7 +511,6 @@
   <project path="packages/providers/ContactsProvider" name="SlimRoms/packages_providers_ContactsProvider" remote="github" revision="lp5.1" />
   <project path="packages/providers/DownloadProvider" name="SlimRoms/packages_providers_DownloadProvider" remote="github" revision="lp5.1" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
-  <project path="packages/providers/TelephonyProvider" name="SlimRoms/packages_providers_TelephonyProvider" remote="github" revision="lp5.1" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
