@@ -432,7 +432,6 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="SlimRoms/android_system_core" remote="github" revision="lp5.1" />
   <project path="system/vold" name="SlimRoms/android_system_vold" remote="github" revision="lp5.1" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
@@ -486,6 +485,7 @@
    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sr" revision="lp5.1" />
    <project path="external/libpng" name="android_external_libpng" groups="pdk" remote="sr" revision="lp5.1" />
    <project path="frameworks/opt/net/wifi" name="SlimRemix/frameworks_opt_net_wifi" remote="github" revision="lp5.1" />
+  <project path="system/core" name="android_system_core" remote="sr" revision="lp5.1" />
 
 
   <!-- SlimRemix Package Apps -->
