@@ -40,7 +40,6 @@
   <!-- SlimRoms Start Here -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="SlimRoms/android_art" remote="github" revision="lp5.1"  />
-  <project path="bionic" name="SlimRoms/android_bionic" remote="github" revision="lp5.1" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/recovery" name="SlimRoms/bootable_recovery" remote="github" revision="lp5.1" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
@@ -178,7 +177,6 @@
   <project path="external/ksoap2" name="platform/external/ksoap2" groups="pdk-cw-fs" />
   <project path="external/kernel-headers" name="platform/external/kernel-headers" groups="pdk-cw-fs" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk-cw-fs" />
-  <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
   <project path="external/libedit" name="platform/external/libedit" />
   <project path="external/libexif" name="platform/external/libexif" groups="pdk-cw-fs" />
@@ -476,6 +474,8 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
+   <!-- SlimRemix -->
+   <project path="bionic" name="android_bionic" remote="sr" revision="lp5.1" />
    <project path="platform_manifest" name="platform_manifest" remote="sr" revision="lp5.1" />
    <project path="frameworks/base" name="frameworks_base" remote="sr" revision="lp5.1" />
    <project path="frameworks/webview" name="android_frameworks_webview" groups="pdk-cw-fs" remote="sr" revision="lp5.1" />
@@ -485,6 +485,7 @@
    <project path="frameworks/opt/net/wifi" name="SlimRemix/frameworks_opt_net_wifi" remote="github" revision="lp5.1" />
    <project path="system/core" name="android_system_core" remote="sr" revision="lp5.1" />
    <project path="frameworks/native" name="frameworks_native" remote="sr" revision="lp5.1" />
+   <project path="external/libcxx" name="android_external_libcxx" remote="sr" revision="lp5.1" />
 
 
   <!-- SlimRemix Package Apps -->
@@ -634,12 +635,11 @@
   <project path="hardware/ril-caf" name="CyanogenMod/android_hardware_ril" remote="github" revision="cm-12.1-caf" />
 
   <!-- SABER MOD GCC -->
-  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="CMRemix/arm-eabi-4.9" remote="gl" revision="master" />-->
-  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="CMRemix/arm-linux-androideabi-4.9" remote="gl" revision="master" />-->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="arm-eabi-4.9" groups="pdk,linux,arm" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="arm-eabi-5.2" groups="pdk,linux,arm" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="arm-linux-androideabi-4.8" groups="pdk,linux,arm" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" groups="pdk,linux,arm" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1" name="arm-linux-androideabi-5.1" groups="pdk,linux,arm" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" remote="aosp" revision="master" />
 
   <!-- Clang Qcom Dependencies -->
