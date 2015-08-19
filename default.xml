@@ -39,7 +39,6 @@
 
   <!-- SlimRoms Start Here -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="SlimRoms/android_art" remote="github" revision="lp5.1"  />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/recovery" name="SlimRoms/bootable_recovery" remote="github" revision="lp5.1" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
@@ -476,6 +475,7 @@
   </project>
 
    <!-- SlimRemix -->
+  <project path="art" name="SlimRemix/android_art" remote="github" revision="lp5.1"  />
    <project path="bionic" name="android_bionic" remote="sr" revision="lp5.1" />
    <project path="platform_manifest" name="platform_manifest" remote="sr" revision="lp5.1" />
    <project path="frameworks/base" name="frameworks_base" remote="sr" revision="lp5.1" />
