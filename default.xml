@@ -634,6 +634,9 @@
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" remote="github" revision="cm-12.1" />
   <project path="hardware/ril-caf" name="CyanogenMod/android_hardware_ril" remote="github" revision="cm-12.1-caf" />
 
+  <!-- CM SDK -->
+  <project path="vendor/cmsdk" name="SlimSaber/cm_platform_sdk" remote="github" revision="lp5.1" />
+
   <!-- SABER MOD GCC -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="arm-eabi-4.9" groups="pdk,linux,arm" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="arm-eabi-5.2" groups="pdk,linux,arm" remote="bb" revision="master" />
@@ -655,7 +658,6 @@
   <project path="vendor/slimremix" name="android_vendor_SlimRemix" remote="sr" revision="lp5.1" >
     <copyfile src="tools/build-slimremix.sh" dest="build-slimremix.sh" />
   </project>
-
 <!--****************************************************** SlimRemix End Here **************************************************************************************-->
 
 </manifest>
