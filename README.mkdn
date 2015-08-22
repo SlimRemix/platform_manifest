@@ -1,61 +1,81 @@
-Welcome to SlimRoms
-===================
-
+SlimRemiX Rom
+===========
 
 Getting Started
 ---------------
 
-To get started with SlimLP, you'll need to get familiar with
-[Git and Repo](http://source.android.com/download/using-repo).
+To get started with SlimRemix/SlimRemix, you'll need to get
+familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
-Please take note that we have two main line branches depending on
-which hardware base your phone is working.
+To initialize your local repository using the SlimRemix trees, use a command like this:
 
-If you have a qcom powered device which needs CodeAuroraForum (CAF)
-trees please us the lp5.0-caf branch which pulls for the effected packages
-the correct caf version for you.
+    repo init -u https://github.com/CMRemix/CMRemix.git -b cm-12.1
 
-To initialize your local repository using the SlimLP trees, use this command:
+Then to sync up:
 
+    repo sync
 
-	repo init -u https://github.com/SlimRemix/platform_manifest.git -b lp5.1
+Please see the [http://forum.xda-developers.com/chef-central/android/tutorial-compile-lollipop-ubuntu-t2929410) for building instructions.
 
+Please follow this guide to install SaberMod GCC dependencies ( Required)
 
+SaberMod GCC Denpendencies
+==========================
 
-Then sync up with this command:
-
-	repo sync
-
+https://gitlab.com/SaberMod/sabermod-manifest/blob/master/README.md
 
 
-Submitting Patches
-------------------
+SlimRemix Build Script
+====================
 
-We're open source, and patches are always welcome!
-You can send patches by using these commands:
+    Usage:
+        build-slimremix.sh [options] device
 
-    cd <workspace>
-    repo start <branch> SlimRoms/<project>
-    cd <project>
-    git add -A
-    git commit -a
-    cd <workspace>
-    repo upload SlimRoms/<project>
+    Options:
+        -a  Disable ADB authentication and set root access to Apps and ADB
+        -b# Prebuilt Chromium options:
+                1 - Remove
+                2 - No Prebuilt Chromium
+        -c# Cleaning options before build:
+                1 - Run make clean
+                2 - Run make installclean
+        -d  Build rom without ccache
+        -e# Extra build output options:
+                1 - Verbose build output
+                2 - Quiet build output
+        -f  Fetch cherry-picks
+        -j# Set number of jobs
+        -l  Optimizations for devices with low-RAM
+        -k  Rewrite roomservice after dependencies update
+        -i  Ignore minor errors during build
+        -r  Reset source tree before build
+        -s# Sync options before build:
+                1 - Normal sync
+                2 - Make snapshot
+                3 - Restore previous snapshot, then snapshot sync
+        -o# Only build:
+                1 - Boot Image
+                2 - Boot Zip
+                3 - Recovery Image 
+        -p  Build using pipe
+        -w  Log file options:
+                1 - Send warnings and errors to a log file
+                2 - Send all output to a log file
 
-Commit your patches in a single commit.
+    Example:
+        ./build-slimremix.sh -c1 trltetmo
 
-Squash multiple commit using this command:
+Credits List
+============
 
-	git rebase -i HEAD~<# of commits>
+*** CyanogenMod, PAC-man, AOKP, crDroid Android, AOSPA, CyanogenMod, OmniROM, SlimROM, LiquidSmooth, SpasilliumNexus, DirtyUnicorns, NamelessROM, AICP, Euphoria-OS. Team Bliss, Dirty Unicon
 
-If you are going to make extra additions, just repeat steps (Don't repo start again), but instead of
+*** Temasek, Cristiano Matos, David Viteri, Slayher, Fattire, gekkehenkie11, XXMrHyde, tobitege, pimpmaneaton, rogersb11, NL-BlackDragon, Paul Beeler, Lokesh Chaman, LorDClockaN, Altaf-Mahdi, kufikugel, dankoman30, FusionJack, Chet Kener, mustermaxmueller....
 
-	git commit -a
+All Kernel Developers: tAndip71, AndreiLux, apb_axel, Arter97, Civato, Christopher83, Codeaurora, DerTeufel, Faux123, Ffolkes, Flar2, Franciscofranco, Franlov, Friedrich420, Gokhanmoral, Imoseyon, Infernum, Javilonas, ktoonsez, Linaro, LoungeKatt (TwistedUmbrella), myfluxi, neobuddy89, savoca, _Sofos_, UpInTheAir, Vanito, Yank555.lu, ZaneZam, placiano, Pafcholini.
 
-use
+Special Thanks To: Temasek, Cristiano Matos, David Viteri, Slayher,Fattire And Many Thanks to PAC Team For The Bad Ass build Scripts & Tools To Build SlimRemix-Rom.
 
-	git commit --amend
+Many Thanks To: FusionJack. which make SlimRemix Rom possible.
 
-Gerrit will recognize it as a new patchset.
-
-To view the status of your and others patches, visit [SlimRoms Code Review](http://review.slimroms.eu)
+Credit to All The Developers That I Forget and Please Let me know if you need me to put your name on the Credit List Thank You All.
