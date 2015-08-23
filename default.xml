@@ -653,6 +653,9 @@
   <project path="external/compiler-rt" name="android_external_compiler-rt" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
   <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
 
+  <!-- OmniROM -->
+  <project path="bootable/recovery-twrp" name="android_bootable_recovery" groups="pdk" remote="omni" />
+
   <!-- Vendor SlimRemix & SaberMod -->
   <project path="vendor/sm" name="android_vendor_SaberMod" remote="sr" revision="lp5.1" />
   <project path="vendor/slimremix" name="android_vendor_SlimRemix" remote="sr" revision="lp5.1" >
