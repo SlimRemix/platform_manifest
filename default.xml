@@ -473,8 +473,11 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
+   <!-- SlimRemix changelogs -->
+   <project path="CHANGELOGS" name="CHANGELOGS" remote="sr" revision="lp5.1" />
+
    <!-- SlimRemix -->
-  <project path="art" name="SlimRemix/android_art" remote="github" revision="lp5.1"  />
+   <project path="art" name="SlimRemix/android_art" remote="github" revision="lp5.1"  />
    <project path="bionic" name="android_bionic" remote="sr" revision="lp5.1" />
    <project path="platform_manifest" name="platform_manifest" remote="sr" revision="lp5.1" />
    <project path="frameworks/base" name="frameworks_base" remote="sr" revision="lp5.1" />
