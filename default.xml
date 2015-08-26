@@ -654,7 +654,7 @@
   <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" remote="sr" revision="clang_qcom_3.6" />
 
   <!-- OmniROM -->
-  <project path="bootable/recovery-twrp" name="android_bootable_recovery" groups="pdk" remote="omni" />
+  <project path="bootable/recovery-twrp" name="omnirom/android_bootable_recovery" groups="pdk" remote="github" revision="android-5.1" />
 
   <!-- Vendor SlimRemix & SaberMod -->
   <project path="vendor/sm" name="android_vendor_SaberMod" remote="sr" revision="lp5.1" />
