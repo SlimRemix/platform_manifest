@@ -510,7 +510,7 @@
   <project path="external/jpeg" name="CyanogenMod/android_external_jpeg" remote="github" revision="cm-12.1" />
   <project path="external/icu" name="CyanogenMod/android_external_icu" remote="github" revision="cm-12.1" />
   <project path="external/openssl" name="CyanogenMod/android_external_openssl" remote="github" revision="cm-12.1" />
-  <project path="external/sqlite" name="SlimRemix/external/sqlite" groups="pdk" remote="github" revision="cm-12.1" />
+  <project path="external/sqlite" name="SlimRemix/android_external_sqlite" groups="pdk" remote="github" revision="cm-12.1" />
 
   <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" remote="github" revision="cm-12.1" />
   <project path="external/connectivity" name="CyanogenMod/android_external_connectivity" remote="github" revision="cm-12.1" />
