@@ -570,7 +570,7 @@
   <project path="hardware/qcom/display-caf/msm8226" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8226" />
   <project path="hardware/qcom/display-caf/msm8610" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8610" />
   <project path="hardware/qcom/display-caf/msm8916" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8916" />
-  <project path="hardware/qcom/display-caf/msm8960" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8960" />
+  <project path="hardware/qcom/display-caf/msm8960" name="SlimRemix/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8960" />
   <project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8974" />
   <project path="hardware/qcom/display-caf/msm8994" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-12.1-caf-8994" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="github" revision="cm-12.1" />
