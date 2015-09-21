@@ -23,10 +23,8 @@
   <project path="external/sonivox" name="CyanogenMod/android_external_sonivox" remote="github" revision="cm-12.1" />
   <project path="external/lzma" name="CyanogenMod/android_external_lzma" remote="github" revision="cm-12.1" />
 
-
   <project name="CyanogenMod/android_external_chromium_org_v8" path="external/chromium_org/v8" remote="github" revision="cm-12.1" />
   <project name="CyanogenMod/android_external_chromium_org_third_party_boringssl_src" path="external/chromium_org/third_party/boringssl/src" remote="github" revision="cm-12.1" />
-
 
   <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" remote="github" revision="cm-12.1" />
   <project path="external/connectivity" name="CyanogenMod/android_external_connectivity" remote="github" revision="cm-12.1" />
@@ -56,7 +54,6 @@
   <project path="external/f2fs-tools" name="CyanogenMod/android_external_f2fs-tools" remote="github" revision="cm-12.1" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" remote="github" revision="cm-12.1" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" revision="cm-12.1" />
-
 
   <project path="external/pcre" name="CyanogenMod/android_external_pcre" remote="github" revision="cm-12.1" />
   <project path="external/libselinux" name="CyanogenMod/android_external_libselinux" remote="github" revision="cm-12.1" />
@@ -99,6 +96,7 @@
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" remote="github" revision="cm-12.1" />
   <project path="system/extras/su" name="CyanogenMod/android_system_extras_su" remote="github" revision="cm-12.1" />
 
+  <!-- Widget -->
   <project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" remote="github" revision="cm-12.1" />
 
   <!-- Email -->
@@ -121,7 +119,6 @@
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" remote="github" revision="cm-12.1" />
   <project path="external/libphonenumbergoogle" name="CyanogenMod/android_external_libphonenumbergoogle" remote="github" revision="cm-12.1" />
   <project path="packages/apps/CellBroadcastReceiver" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" remote="github" revision="cm-12.1" />
-
 
   <!-- Gallery, Camera and Calculator -->
   <project path="packages/apps/Camera2" name="CyanogenMod/android_packages_apps_Camera2" remote="github" revision="cm-12.1" />
