@@ -17,11 +17,6 @@
   <remote  name="bb"
            fetch="https://bitbucket.org/CMRemiX/" />
 
-  <default revision="refs/heads/lp5.1"
-           remote="github"
-           sync-c="true"
-           sync-j="8" />
-
    <!-- SlimRemix Manifest -->
    <project path="platform_manifest" name="platform_manifest" remote="sr" revision="lp5.1" />
 
