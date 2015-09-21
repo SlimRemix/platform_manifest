@@ -616,8 +616,8 @@
   <project path="packages/services/Telephony" name="SlimRemix/packages_services_Telephony" remote="github" revision="cm-12.1" />
   <project path="frameworks/opt/telephony" name="SlimRemix/frameworks_opt_telephony" remote="github" revision="cm-12.1" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" remote="github" revision="cm-12.1" />
-  <project path="frameworks/opt/net/ims" name="CyanogenMod/android_frameworks_opt_net_ims" remote="github" revision="cm-12.1" />
-  <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_providers_TelephonyProvider" remote="github" revision="cm-12.1" />
+  <project path="frameworks/opt/net/ims" name="SlimRemix/android_frameworks_opt_net_ims" remote="github" revision="cm-12.1" />
+  <project path="packages/providers/TelephonyProvider" name="SlimRemix/android_packages_providers_TelephonyProvider" remote="github" revision="cm-12.1" />
   <project path="external/libphonenumbergoogle" name="CyanogenMod/android_external_libphonenumbergoogle" remote="github" revision="cm-12.1" />
   <project path="packages/apps/CellBroadcastReceiver" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" remote="github" revision="cm-12.1" />
   <project path="packages/apps/Stk" name="SlimRemix/android_packages_apps_Stk" remote="github" revision="cm-12.1" />
